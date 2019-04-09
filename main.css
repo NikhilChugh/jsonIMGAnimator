@@ -1,0 +1,80 @@
+
+
+body{
+    background: black;
+}
+
+#playBtn {
+    border: 3px solid grey;
+    border-radius: 20px;
+    align-content: center;
+    color: goldenrod;
+    display: inline-block;
+    padding: 5px 15px;
+    margin: 300px 600px;
+    cursor: pointer;
+}
+
+
+#anim {
+    position: relative;
+}
+
+#anim img {
+    max-width: 60%;
+    height: auto; 
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+@keyframes ImgAnimation {
+    0%{
+        opacity: 1;
+    }
+    13.3%{
+        opacity: 1;
+    }
+    16.6%{
+        opacity: 0;
+    }
+    96.7%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+#anim img:nth-of-type(1){
+    animation-delay: 12.5s;
+}
+
+#anim img:nth-of-type(2){
+    animation-delay: 10s;
+}
+
+#anim img:nth-of-type(3){
+    animation-delay: 7.5s;
+}
+
+#anim img:nth-of-type(4){
+    animation-delay: 5s;
+}
+
+#anim img:nth-of-type(5){
+    animation-delay: 2.5s;
+}
+
+#anim img:nth-of-type(6){
+    animation-delay: 0;
+}
+
+img{
+    animation-name: ImgAnimation;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
